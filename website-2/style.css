@@ -1,0 +1,12 @@
+#inlineFrame {
+  border-radius: 10%;
+  border: 3px double black;
+}
+
+.video-colection {
+  display: flex;
+  flex-wrap: nowrap | wrap | wrap-reverse;
+  flex-direction: row;
+  align-items: center;
+  box-shadow: inset;
+}
