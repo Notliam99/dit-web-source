@@ -69,12 +69,24 @@
 }
 
 .sale-card > button {
-  transition: all 150ms ease-in-out;
+  background-color: rgba(0,0,0,0);
+  transition: all 150ms ease;
 }
 
 .sale-card > button:hover {
-  box-shadow: 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255), 0.6em 0.6em 2em rgba(0, 0, 0, 0.3);
+  box-shadow: rgba(255,0,0,0.5) 0px 7px 15px 0px;
+  cursor: pointer;
 }
+
+.sale-card > button:active {
+  box-shadow: rgba(255, 0, 0, 0.5) 0px 0px 0px 0px;
+  transform: translateY(5px);
+  transition: 100ms;
+}
+
+/* .sale-card > button:hover { */
+/*   box-shadow: 0 -3em 3em rgba(0, 0, 0, 0.1), /* 0 0 0 2px rgb(255, 255, 255),  */0em 0.6em 2em rgba(0, 0, 0, 0.3); */
+/* } */
 
 @media only screen and (max-width: 800px) {
   .sale-card {
